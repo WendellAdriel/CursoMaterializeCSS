@@ -43,6 +43,61 @@
           </ul>
         </div>
       </nav>
+      
+      <!--
+      Para criar um slider Fullscreen, que vai preencher toda a tela usamos:
+      <div class="slider fullscreen">
+      -->
+      <div class="slider">
+        <ul class="slides">
+        <li>
+          <img src="http://lorempixel.com/580/250/nature/1">
+          <div class="caption center-align">
+            <h1 class="orange-text text-darken-3">Primeiro Título</h1>
+            <h4 class="orange-text">Primeira Descrição</h4>
+            <h6 class="orange-text text-lighten-2">Testando</h6>
+          </div>
+        </li>
+        <li>
+          <img src="http://lorempixel.com/580/250/nature/2">
+          <div class="caption left-align">
+            <h3>Segundo Título</h3>
+            <h6>Teste</h6>
+            <h6>Teste</h6>
+            <h6>Teste</h6>
+            <h6>Teste</h6>
+          </div>
+        </li>
+        <li>
+          <img src="http://lorempixel.com/580/250/nature/3">
+          <div class="caption right-align">
+            <h3>Terceiro Título</h3>
+            <h5 class="white-text">Terceira Descrição</h5>
+          </div>
+        </li>
+        <li>
+          <img src="http://lorempixel.com/580/250/nature/4">
+          <div class="caption center-align">
+            <h3>Quarto Título</h3>
+            <h5 class="white-text">Quarta Descrição</h5>
+          </div>
+        </li>
+        <li>
+          <img src="http://lorempixel.com/580/250/nature/4">
+          <div class="caption center-align">
+            <h3>Quarto Título</h3>
+            <h5 class="white-text">Quarta Descrição</h5>
+          </div>
+        </li>
+        <li>
+          <img src="http://lorempixel.com/580/250/nature/4">
+          <div class="caption center-align">
+            <h3>Quarto Título</h3>
+            <h5 class="white-text">Quarta Descrição</h5>
+          </div>
+        </li>
+      </ul>
+    </div>
 
 
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
@@ -52,6 +107,11 @@
         $(document).ready(function(){
           $(".button-collapse").sideNav();
           //$(".dropdown-button").dropdown();
+          $(".slider").slider();
+          /*
+          * Para iniciar o slider Fullscreen utilizamos:
+          * $(".slider").slider({full_width:true});
+          */
         });
       </script>
     </body>
