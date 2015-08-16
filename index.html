@@ -309,6 +309,79 @@
       </div>
     </div>
 
+    <!-- ATIVAR MODAIS -->
+    <div class="row">
+      <div class="col s12">
+        <h1>Trabalhando com Modais</h1>
+      </div>
+      <div class="col s4">
+        <a class="waves-effect waves-light btn btn-large red darken-3 modal-trigger" href="#modalSimples">
+          Modal Simples
+        </a>
+      </div>
+      <div class="col s4">
+        <a class="waves-effect waves-light btn btn-large blue darken-3 modal-trigger" href="#modalRodape">
+          Modal Rodapé Fixo
+        </a>
+      </div>
+      <div class="col s4">
+        <a class="waves-effect waves-light btn btn-large green darken-3 modal-trigger" href="#modalCustom">
+          Modal Customizada
+        </a>
+      </div>
+    </div>
+
+    <!-- MODAIS -->
+    <div id="modalSimples" class="modal">
+      <div class="modal-content">
+        <h4>Modal Simples</h4>
+        <p>Exemplo de modal simples</p>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close waves-effect waves-light btn-flat red">Fechar</a>
+      </div>
+    </div>
+
+    <div id="modalRodape" class="modal modal-fixed-footer">
+      <div class="modal-content">
+        <h4>Modal com Rodapé Fixo</h4>
+        <p>Muito texto</p>
+        <p>Muito texto</p>
+        <p>Muito texto</p>
+        <p>Muito texto</p>
+        <p>Muito texto</p>
+        <p>Muito texto</p>
+        <p>Muito texto</p>
+        <p>Muito texto</p>
+        <p>Muito texto</p>
+        <p>Muito texto</p>
+        <p>Muito texto</p>
+        <p>Muito texto</p>
+        <p>Muito texto</p>
+        <p>Muito texto</p>
+        <p>Muito texto</p>
+        <p>Muito texto</p>
+        <p>Muito texto</p>
+        <p>Muito texto</p>
+        <p>Muito texto</p>
+        <p>Muito texto</p>
+        <p>Muito texto</p>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close waves-effect waves-light btn-flat red">Fechar</a>
+      </div>
+    </div>
+
+    <div id="modalCustom" class="modal bottom-sheet">
+      <div class="modal-content">
+        <h4>Modal Customizada</h4>
+        <p>Essa modal fica sempre no fim da página!!!</p>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close waves-effect waves-light btn-flat red">Fechar</a>
+      </div>
+    </div>
+
     <!-- RODAPÉ -->
     <footer class="page-footer orange lighten-2">
       <div class="container">
@@ -350,12 +423,19 @@
           * Para iniciar o slider Fullscreen utilizamos:
           * $(".slider").slider({full_width:true});
           */
-         
+
          /*
           * Você ainda pode usar essas duas funções para abrir e fechar o menu do botão usando as funções abaixo:
           * $(".fixed-action-btn").openFAB(); para abrir
           * $(".fixed-action-btn").closeFAB(); para fechar
           */
+
+          $('.modal-trigger').leanModal({
+              dismissible: true, //Pode ser fechada ao clicar fora da modal
+              opacity: .6, // Opacidade do fundo da modal
+              in_duration: 500,// Durãção da transição de abrir modal
+              out_duration: 500, // Duração da transição de fechar modal
+            });
         });
       </script>
     </body>
